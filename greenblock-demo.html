@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="greenblock-demo.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        height: 240;
+        width: 240;
+        border: 0px solid white;
+      }
+      #item1 {
+        grid-area: 1 / 1 / 5 / 5;
+        border-width: 1px solid white;
+        background-color: green;
+        border: 1px solid white;
+      }
+      #item2 {
+        grid-area: 5 / 5 / 9 / 9;
+        background-color: green;
+        border: 1px solid white;
+      }
+      #item3 {
+        grid-area: 5 / 1 / 9 / 5;
+        background-color: green;
+        border: 1px solid white;
+      }
+      #item4 {
+        grid-area: 1 / 5 / 5 / 9;
+        background-color: green;
+        border: 1px solid white;
+      }
+      #item5 {
+        grid-area: 3 / 3 / 7 / 7;
+        background-color: green;
+        z-index: 1;
+        border: 1px solid white;
+      }
+      body {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="item2"></div>
+      <div id="item1"></div>
+      <div id="item3"></div>
+      <div id="item4"></div>
+      <div id="item5"></div>
+    </div>
+  </body>
+</html>
